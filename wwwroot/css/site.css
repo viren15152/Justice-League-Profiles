@@ -152,6 +152,27 @@ h2, h3, h4, h5, h6 {
   color: #ffcc00; /* Highlight effect on hover */
 }
 
+/* Style Villain Section Differently */
+.btn-danger {
+  background: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+  background: darkred;
+}
+
+/* Villain Card Background */
+.villain-card {
+  background: #330000 !important; /* Dark red background */
+  color: white;
+}
+
 
 
 

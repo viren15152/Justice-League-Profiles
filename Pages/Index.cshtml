@@ -4,8 +4,10 @@
     ViewData["Title"] = "DC Superheroes";
 }
 
-<h1 class="text-center mb-4">Justice League Profiles:</h1>
+<h1 class="text-center mb-4">Justice League Profiles</h1>
 
+<!-- ✅ Heroes Section -->
+<h2 class="text-center mt-5">Heroes</h2>
 <div class="container mt-4">
     <div class="row">
         @foreach (var hero in Model.Heroes)
@@ -16,13 +18,34 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">@hero.Name</h5>
                         <p class="card-text">@hero.Description</p>
-                        <a href="@hero.DcProfileUrl" target="_blank" class="btn btn-primary">View Profile</a> <!-- Links to DC's official page -->
+                        <a href="@hero.DcProfileUrl" target="_blank" class="btn btn-primary">View Profile</a>
                     </div>
                 </div>
             </div>
         }
     </div>
 </div>
+
+<!-- Villains Section -->
+<h2 class="text-center mt-5">Villains</h2>
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var villain in Model.Villains)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm villain-card">
+                    <img class="card-img-top" src="@villain.ImageUrl" alt="@villain.Name">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@villain.Name</h5>
+                        <p class="card-text">@villain.Description</p>
+                        <a href="@villain.DcProfileUrl" target="_blank" class="btn btn-danger">View Profile</a> <!-- Red button for villains -->
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
 
 
 

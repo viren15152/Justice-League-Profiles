@@ -11,15 +11,17 @@
         @foreach (var hero in Model.Heroes)
         {
             <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
+                <div class="card mb-4 shadow-lg">
                     <img class="card-img-top" src="@hero.ImageUrl" alt="@hero.Name">
                     <div class="card-body text-center">
                         <h5 class="card-title">@hero.Name</h5>
                         <p class="card-text">@hero.Description</p>
+                        <a href="/HeroProfile?id=@hero.Id" class="btn btn-primary">View Profile</a>
                     </div>
                 </div>
             </div>
         }
     </div>
 </div>
+
 

@@ -8,7 +8,6 @@ namespace Justice_League_Profiles.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-        // ✅ FIX: Ensure Heroes is public and initialized properly
         public List<Hero> Heroes { get; private set; } = new List<Hero>();
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -20,8 +19,8 @@ namespace Justice_League_Profiles.Pages
         {
             Heroes = new List<Hero>
             {
-                new Hero { Id = 1, Name = "Superman", Description = "The Man of Steel, protector of Earth.", ImageUrl = "/images/superman.jpg" },
-                new Hero { Id = 2, Name = "Batman", Description = "The Dark Knight, defender of Gotham City.", ImageUrl = "/images/batman.jpg" },
+                new Hero { Id = 1, Name = "Superman", Description = "The Man of Steel, protector of Earth. Powers: super-strength, flight, invulnerability, super speed, heat vision, freeze breath, x-ray vision, superhuman hearing, healing factor", ImageUrl = "/images/superman.jpg" },
+                new Hero { Id = 2, Name = "Batman", Description = "The Dark Knight, defender of Gotham City. Powers: Batman does not have any metahuman abilities. Instead, he relies on his sharp mind and disciplined body, as well as his extensive combat and detective training. A master of virtually every form of martial arts, a brilliant tactician and a genius-level forensic scientist ", ImageUrl = "/images/batman.jpg" },
                 new Hero { Id = 3, Name = "Wonder Woman", Description = "Amazon warrior princess.", ImageUrl = "/images/wonderwoman.jpg" },
                 new Hero { Id = 4, Name = "The Flash", Description = "The fastest man alive.", ImageUrl = "/images/flash.jpg" },
                 new Hero { Id = 5, Name = "Aquaman", Description = "The King of Atlantis.", ImageUrl = "/images/aquaman.jpg" },
@@ -31,7 +30,6 @@ namespace Justice_League_Profiles.Pages
         }
     }
 
-    // ✅ FIX: Ensure Hero class is inside the same namespace and marked as public
     public class Hero
     {
         public int Id { get; set; }

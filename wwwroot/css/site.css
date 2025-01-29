@@ -1,31 +1,98 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+  font-family: Arial, sans-serif;
+  background: black; /* Dark background */
+  color: white; /* Light text for readability */
+  margin: 0;
+  padding: 0;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: white; /* Ensure title is readable */
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
+
+/*Style for Bootstrap Cards */
+.card {
+  background: #222; /* Dark grey card background */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Uniform Image Sizes for Cards */
+.card-img-top {
+  width: 100%; /* Make sure the image fills the card */
+  height: 300px; /* Fixed height for consistency */
+  object-fit: cover; /* Crop instead of stretching */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Card Text Styling */
+.card-body {
+  background: #111; /* Darker grey background inside cards */
+  padding: 20px;
+  color: white;
+}
+
+/* Grey Buttons */
+.btn-primary {
+  background: grey; /* Set button color to grey */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #555; /* Slightly darker grey on hover */
+}
+
+/* Secondary Buttons (e.g., Back to Profiles) */
+.btn-secondary {
+  background: #333; /* Dark grey for secondary actions */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background: #666; /* Lighter grey on hover */
+}
+
+/* Make the Navbar Dark */
+.navbar {
+  background: black !important; /* Ensure the navbar blends with the page */
+  border-bottom: 2px solid grey; /* Adds a subtle border */
+}
+
+/* ✅ Style Navbar Text */
+.navbar-brand {
+  font-size: 1.5rem;
+  color: white !important;
+}
+
+.navbar-brand {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+

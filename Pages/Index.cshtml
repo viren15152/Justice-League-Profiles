@@ -1,7 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Justice League Profiles";
+    ViewData["Title"] = "DC Superheroes";
 }
 
 <h1 class="text-center mb-4">Justice League Profiles</h1>
@@ -11,17 +11,18 @@
         @foreach (var hero in Model.Heroes)
         {
             <div class="col-md-4">
-                <div class="card mb-4 shadow-lg">
+                <div class="card mb-4 shadow-sm">
                     <img class="card-img-top" src="@hero.ImageUrl" alt="@hero.Name">
                     <div class="card-body text-center">
                         <h5 class="card-title">@hero.Name</h5>
                         <p class="card-text">@hero.Description</p>
-                        <a href="/HeroProfile?id=@hero.Id" class="btn btn-primary">View Profile</a>
+                        <a href="@hero.DcProfileUrl" target="_blank" class="btn btn-primary">View Profile</a> <!-- ✅ Links to DC's official page -->
                     </div>
                 </div>
             </div>
         }
     </div>
 </div>
+
 
 

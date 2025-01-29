@@ -8,7 +8,7 @@ namespace Justice_League_Profiles.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-        // ✅ FIX: Initialize Heroes to an empty list to avoid nullability warnings
+        // ✅ FIX: Ensure Heroes is public and initialized properly
         public List<Hero> Heroes { get; private set; } = new List<Hero>();
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -31,15 +31,15 @@ namespace Justice_League_Profiles.Pages
         }
     }
 
+    // ✅ FIX: Ensure Hero class is inside the same namespace and marked as public
     public class Hero
     {
         public int Id { get; set; }
-
-        // ✅ FIX: Add `required` modifier to enforce non-null values
         public required string Name { get; set; }
         public required string Description { get; set; }
         public required string ImageUrl { get; set; }
     }
 }
+
 
 

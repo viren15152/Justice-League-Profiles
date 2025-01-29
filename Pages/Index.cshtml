@@ -1,22 +1,25 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Justice League Profiles";
 }
 
 <h1 class="text-center mb-4">Justice League Profiles</h1>
 
-<div class="row">
-    @foreach (var hero in Model.Heroes)
-    {
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="@hero.ImageUrl" alt="@hero.Name">
-                <div class="card-body text-center">
-                    <h5 class="card-title">@hero.Name</h5>
-                    <p class="card-text">@hero.Description</p>
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var hero in Model.Heroes)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="@hero.ImageUrl" alt="@hero.Name">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@hero.Name</h5>
+                        <p class="card-text">@hero.Description</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 </div>
+

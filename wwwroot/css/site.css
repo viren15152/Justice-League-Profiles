@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   background: black; /* Dark background */
   color: white; /* Light text for readability */
   margin: 0;
@@ -42,6 +44,7 @@ h1 {
 
 /* Card Text Styling */
 .card-body {
+  font-family: 'Bebas Neue', sans-serif;
   background: #111; /* Darker grey background inside cards */
   padding: 20px;
   color: white;
@@ -77,22 +80,31 @@ h1 {
   background: #666; /* Lighter grey on hover */
 }
 
-/* Make the Navbar Dark */
-.navbar {
-  background: black !important; /* Ensure the navbar blends with the page */
-  border-bottom: 2px solid grey; /* Adds a subtle border */
+/* Styles for DC Logo in Navbar */
+.dc-logo {
+  height: 50px;  /* Adjust the size */
+  width: auto;
+  margin-right: 10px;  /* Space between logo and text */
 }
 
-/* ✅ Style Navbar Text */
+/* Center Navbar Text and Logo */
 .navbar-brand {
-  font-size: 1.5rem;
-  color: white !important;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: whitesmoke !important; /* Gold color for DC theme */
+  display: flex;
+  align-items: center;
 }
 
-.navbar-brand {
-  display: block;
-  text-align: center;
-  width: 100%;
+/* Ensure the navbar content is centered */
+.navbar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 

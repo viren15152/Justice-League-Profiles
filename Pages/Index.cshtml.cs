@@ -19,13 +19,15 @@ namespace Justice_League_Profiles.Pages
         {
             Heroes = new List<Hero>
             {
-                new Hero { Id = 1, Name = "Superman", Description = "The Man of Steel, protector of Earth. Powers: super-strength, flight, invulnerability, super speed, heat vision, freeze breath, x-ray vision, superhuman hearing, healing factor", ImageUrl = "/images/superman.jpg" },
-                new Hero { Id = 2, Name = "Batman", Description = "The Dark Knight, defender of Gotham City. Powers: Batman does not have any metahuman abilities. Instead, he relies on his sharp mind and disciplined body, as well as his extensive combat and detective training. A master of virtually every form of martial arts, a brilliant tactician and a genius-level forensic scientist ", ImageUrl = "/images/batman.jpg" },
-                new Hero { Id = 3, Name = "Wonder Woman", Description = "Amazon warrior princess.", ImageUrl = "/images/wonderwoman.jpg" },
-                new Hero { Id = 4, Name = "The Flash", Description = "The fastest man alive.", ImageUrl = "/images/flash.jpg" },
-                new Hero { Id = 5, Name = "Aquaman", Description = "The King of Atlantis.", ImageUrl = "/images/aquaman.jpg" },
-                new Hero { Id = 6, Name = "Green Lantern", Description = "Protector of Sector 2814.", ImageUrl = "/images/greenlantern.jpg" },
-                new Hero { Id = 7, Name = "Cyborg", Description = "Half man, half machine, all hero.", ImageUrl = "/images/cyborg.jpg" }
+                new Hero { Id = 1, Name = "Superman (Kal-EL, Clark Kent)", Description = "The Man of Steel, protector of Earth. Powers: Super-strength, flight, invulnerability, super speed, heat vision, freeze breath, x-ray vision, superhuman hearing, healing factor.", ImageUrl = "/images/superman.jpg" },
+                new Hero { Id = 2, Name = "Batman (Bruce Wayne)", Description = "The Dark Knight, defender of Gotham City. Powers: Batman does not have any metahuman abilities. Instead, he relies on his sharp mind and disciplined body, as well as his extensive combat and detective training. A master of virtually every form of martial arts, a brilliant tactician and a genius-level forensic scientist.", ImageUrl = "/images/batman.jpg" },
+                new Hero { Id = 3, Name = "Wonder Woman (Diana Prince)", Description = "Princess Diana of Themyscira. Powers: Super strength, invulnerability, flight, combat skill, combat strategy, superhuman agility, healing factor, magic weaponry.", ImageUrl = "/images/wonderwoman.jpg" },
+                new Hero { Id = 4, Name = "The Flash (Barry Allen)", Description = "The fastest man alive. Powers: Super speed, intangibility, superhuman agility, time travel, creates and controls lightning, multiversal knowledge", ImageUrl = "/images/flash.jpg" },
+                new Hero { Id = 5, Name = "Aquaman (Arthur Curry)", Description = "The King of Atlantis. Powers: super strength, durability, control over sea life, exceptional swimming ability, ability to breathe underwater", ImageUrl = "/images/aquaman.jpg" },
+                new Hero { Id = 6, Name = "Green Lantern (Hal Jordan)", Description = "Protector of Sector 2814. Powers: Hard light constructs, instant weaponry, force fields, flight, durability, alien technology", ImageUrl = "/images/greenlantern.jpg" },
+                new Hero { Id = 7, Name = "Cyborg (Victor Stone)", Description = "Half man, half machine, all hero. Powers: super strength, advanced technology, instant weaponry, genius-level intellect, control over technology, computer hacking, durability, teleportation ", ImageUrl = "/images/cyborg.jpg" },
+                new Hero { Id = 8, Name = "Martian Manhunter (J'onn J'onzz)", Description = "J'onn J'onzz, the last Martian. Powers: Flight, super strength, invulnerability, enhanced speed, shapeshifting, invisibility, telepathy, telekinesis, intelligence, intangibility, optic blasts ", ImageUrl = "/images/martianmanhunter.jpg" },   
+                new Hero { Id = 9, Name = "Green Arrow (Oliver Queen)", Description = "Master archer. Powers: Archery, unrivaled aim, exceptional martial artist, inexhaustible wealth. Billionaire Oliver Queen uses both his wealth and his unmatched archery skills as the Justice League's battling bowman, Green Arrow.", ImageUrl = "/images/greenarrow.jpg"},
             };
         }
     }

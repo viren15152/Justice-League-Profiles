@@ -38,7 +38,7 @@ namespace Justice_League_Profiles.Pages
         public required string Name { get; set; }
         public required string Description { get; set; }
         public required string ImageUrl { get; set; }
-        public required string DcProfileUrl { get; set; } // ✅ Added this property for the DC Comics website link
+        public required string DcProfileUrl { get; set; } // Added this property for the DC Comics website link
     }
 }
 

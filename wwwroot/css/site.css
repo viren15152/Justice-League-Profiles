@@ -58,7 +58,7 @@ h1 {
   text-transform: capitalize; /* Ensures first letter of each word is uppercase */
 }
 
-/* ✅ Buttons Should Keep Normal Case */
+/* Buttons Should Keep Normal Case */
 .btn-primary,
 .btn-secondary {
   font-family: 'Bebas Neue', sans-serif;
@@ -120,23 +120,24 @@ h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
-/* Style for DC Logo in Navbar */
+/* ✅ Style for DC Logo in Navbar */
 .dc-logo {
   height: 50px;  /* Adjust the size */
   width: auto;
   margin-right: 10px;  /* Space between logo and text */
 }
 
-/* Smaller Logo for Navbar Links */
+/* ✅ Smaller Logo for Navbar Links */
 .dc-logo-small {
-  height: 30px; /* Smaller size for Games and Shop links */
+  height: 30px; /* Smaller size for Games, Shop, and Comics links */
   width: auto;
   margin-right: 5px;
 }
 
-/* Style for DC Games & Shop Links */
+/* ✅ Style for DC Games, Shop & Comics Links */
 .games-link,
-.shop-link {
+.shop-link,
+.comics-link {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -146,9 +147,11 @@ h2, h3, h4, h5, h6 {
 }
 
 .games-link:hover,
-.shop-link:hover {
+.shop-link:hover,
+.comics-link:hover {
   color: #ffcc00; /* Highlight effect on hover */
 }
+
 
 
 

@@ -120,6 +120,35 @@ h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
+/* Style for DC Logo in Navbar */
+.dc-logo {
+  height: 50px;  /* Adjust the size */
+  width: auto;
+  margin-right: 10px;  /* Space between logo and text */
+}
+
+/* ✅ Smaller Logo for Games Link */
+.dc-logo-small {
+  height: 30px; /* Smaller size for Games link */
+  width: auto;
+  margin-right: 5px;
+}
+
+/* ✅ Style for Games Link */
+.games-link {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and logo */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.games-link:hover {
+  color: #ffcc00; /* Highlight effect on hover */
+}
+
+
 
 
 

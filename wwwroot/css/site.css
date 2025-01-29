@@ -127,15 +127,16 @@ h2, h3, h4, h5, h6 {
   margin-right: 10px;  /* Space between logo and text */
 }
 
-/* ✅ Smaller Logo for Games Link */
+/* Smaller Logo for Navbar Links */
 .dc-logo-small {
-  height: 30px; /* Smaller size for Games link */
+  height: 30px; /* Smaller size for Games and Shop links */
   width: auto;
   margin-right: 5px;
 }
 
-/* ✅ Style for Games Link */
-.games-link {
+/* Style for DC Games & Shop Links */
+.games-link,
+.shop-link {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -144,9 +145,11 @@ h2, h3, h4, h5, h6 {
   transition: color 0.3s ease-in-out;
 }
 
-.games-link:hover {
+.games-link:hover,
+.shop-link:hover {
   color: #ffcc00; /* Highlight effect on hover */
 }
+
 
 
 

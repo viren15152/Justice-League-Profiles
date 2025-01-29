@@ -6,6 +6,7 @@ body {
   color: white; /* Light text for readability */
   margin: 0;
   padding: 0;
+  text-transform: none; /* Ensures text is not forced uppercase */
 }
 
 h1 {
@@ -13,6 +14,7 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 30px;
   color: white; /* Ensure title is readable */
+  text-transform: none; /* Keep normal capitalization */
 }
 
 .container {
@@ -21,7 +23,7 @@ h1 {
   padding: 20px;
 }
 
-/*Style for Bootstrap Cards */
+/* Style for Bootstrap Cards */
 .card {
   background: #222; /* Dark grey card background */
   border-radius: 10px;
@@ -48,17 +50,30 @@ h1 {
   background: #111; /* Darker grey background inside cards */
   padding: 20px;
   color: white;
+  text-transform: none; /* Keep normal capitalization */
+}
+
+/* Fixes Titles to Use Proper Capitalization */
+.card-title {
+  text-transform: capitalize; /* Ensures first letter of each word is uppercase */
+}
+
+/* ✅ Buttons Should Keep Normal Case */
+.btn-primary,
+.btn-secondary {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  text-transform: none; /* Ensures button text follows correct capitalization */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
 }
 
 /* Grey Buttons */
 .btn-primary {
-  background: grey; /* Set button color to grey */
-  border: none;
+  background: grey;
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
@@ -67,43 +82,47 @@ h1 {
 
 /* Secondary Buttons (e.g., Back to Profiles) */
 .btn-secondary {
-  background: #333; /* Dark grey for secondary actions */
-  border: none;
+  background: #333;
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background 0.3s ease-in-out;
 }
 
 .btn-secondary:hover {
   background: #666; /* Lighter grey on hover */
 }
 
-/* Styles for DC Logo in Navbar */
+/* Fixes DC Logo in Navbar */
 .dc-logo {
-  height: 50px;  /* Adjust the size */
+  height: 50px;
   width: auto;
-  margin-right: 10px;  /* Space between logo and text */
+  margin-right: 10px;
 }
 
-/* Center Navbar Text and Logo */
+/* Fixes Navbar Text */
 .navbar-brand {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2rem;
-  text-transform: uppercase;
+  text-transform: uppercase; /* Keep uppercase for the navbar title */
   letter-spacing: 2px;
-  color: whitesmoke !important; /* Gold color for DC theme */
+  color: whitesmoke !important;
   display: flex;
   align-items: center;
 }
 
-/* Ensure the navbar content is centered */
+/* Ensures the navbar content is centered */
 .navbar .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* Ensure Headings Use Normal Capitalization */
+h2, h3, h4, h5, h6 {
+  text-transform: none;
+}
+
+
+
+
 
 
 

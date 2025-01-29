@@ -20,7 +20,7 @@ namespace Justice_League_Profiles.Pages
         {
             Heroes = new List<Hero>
             {
-                new Hero { Id = 1, Name = "Superman", Description = "The Man of Steel, protector of Metropolis.", ImageUrl = "/images/superman.jpg" },
+                new Hero { Id = 1, Name = "Superman", Description = "The Man of Steel, protector of Earth.", ImageUrl = "/images/superman.jpg" },
                 new Hero { Id = 2, Name = "Batman", Description = "The Dark Knight, defender of Gotham City.", ImageUrl = "/images/batman.jpg" },
                 new Hero { Id = 3, Name = "Wonder Woman", Description = "Amazon warrior princess.", ImageUrl = "/images/wonderwoman.jpg" },
                 new Hero { Id = 4, Name = "The Flash", Description = "The fastest man alive.", ImageUrl = "/images/flash.jpg" },
